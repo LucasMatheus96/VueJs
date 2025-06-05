@@ -1,0 +1,15 @@
+# Ignora a pasta node_modules
+node_modules/
+
+# Ignora arquivos específicos do Vue (caso necessário)
+*.log
+*.env
+/dist/
+/build/
+/coverage/
+/.vite/
+/.vscode/
+
+# Ignora arquivos temporários do sistema
+.DS_Store
+Thumbs.db
