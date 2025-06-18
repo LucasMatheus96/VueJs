@@ -11,7 +11,23 @@
 <body>
 
     <script>
-        // ...
+        new Vue({
+            el:'#app',
+            data:{
+                title: 'Relátorio de Vendas',
+                sales: null
+            },
+            methods:{
+                getSales(){
+                    fetch('/data/sales.json')
+                    .then(resp => resp.json())
+                    .then(data => console.log(data))
+                }
+            },
+            mounted(){
+                this.getSales()
+            }
+        })
     </script>
 </body>
 
