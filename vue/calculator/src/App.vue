@@ -21,7 +21,7 @@ export default {
     src: url("./fonts/Roboto_Condensed-Thin.ttf");
 }
 
-*{
+* {
     font-family: "RobotoMono", monospace;
 }
 
